@@ -2,15 +2,11 @@ version: '3.8'
 services:
   welcome-page:
     build: ./welcome-page
-    ports:
-      - "3001:3000"
     networks:
       - my_network
 
   login-page:
     build: ./login-page
-    ports:
-      - "3002:3000"
     networks:
       - my_network
 

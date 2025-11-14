@@ -3,7 +3,7 @@ import './App.css';
 
 function App() {
   const handleLoginClick = () => {
-    window.location.href = '/login';
+    window.location.href = '/login/';
   };
 
   return (
