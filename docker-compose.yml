@@ -2,11 +2,15 @@ version: '3.8'
 services:
   welcome-page:
     build: ./welcome-page
+    ports:
+      - "8082:80"
     networks:
       - my_network
 
   login-page:
     build: ./login-page
+    ports:
+      - "8083:80"
     networks:
       - my_network
 
